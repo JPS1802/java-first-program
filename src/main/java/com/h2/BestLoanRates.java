@@ -6,9 +6,9 @@ import java.util.Map;
 public class BestLoanRates {
     public static final Map<Integer, Float> bestRates =
             Map.of(
-            k1:1, v1:5.50f,
-            k2:2, v2:3.45f,
-            k3:3, v3:2.67f);
+            1, 5.50f,
+            2, 3.45f,
+            3, 2.67f);
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
