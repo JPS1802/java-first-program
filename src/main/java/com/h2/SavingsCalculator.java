@@ -9,7 +9,7 @@ public class SavingsCalculator {
     }
     private float sumOfCredits(float[] credits) {
         float sum = 0.0f;
-        for (float credits credits){
+        for (float credit : credits) {
             sum += credit;
             return sum;
         }
