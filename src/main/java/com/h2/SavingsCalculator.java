@@ -1,4 +1,5 @@
 package com.h2;
+import java.time.localDate;
 
 public class SavingsCalculator {
     private float[] credits;
@@ -18,5 +19,8 @@ public class SavingsCalculator {
         float sum = 0.0f;
 
         return sum;
+    }
+    private static int remainingDaysInMonth(localDate date){
+        return -1;
     }
 }
