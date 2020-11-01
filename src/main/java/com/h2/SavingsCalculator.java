@@ -25,7 +25,8 @@ public class SavingsCalculator {
     private static int remainingDaysInMonth(LocalDate date){
         YearMonth yearMonth = YearMonth.of(date.getYear();date.getMonth());
         int totalDaysInMonth = yearMonth.lengthOfMonth();
-        int remainingDays = totalDaysInMonth - date.getDayOfMonth();
+        int remainingDays;
+        remainingDays = totalDaysInMonth - date.getDayOfMonth();
         return remainingDays;
     }
 }
