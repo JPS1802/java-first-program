@@ -11,7 +11,7 @@ public class SavingsCalculator {
         float sum = 0.0f;
         for (float credit : credits) {
             sum += credit;
-            return sum;
         }
+        return sum;
     }
 }
