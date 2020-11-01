@@ -14,4 +14,9 @@ public class SavingsCalculator {
         }
         return sum;
     }
+    private float sumOfDebits(float[] debits) {
+        float sum = 0.0f;
+
+        return sum;
+    }
 }
