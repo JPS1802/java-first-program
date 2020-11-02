@@ -31,4 +31,8 @@ public class MortgageCalculator {
         this.monthlyPayment = M;
     }
 
+    public String toString(){
+        return "Hello";
+    }
+
 }
