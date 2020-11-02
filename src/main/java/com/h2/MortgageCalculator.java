@@ -1,5 +1,7 @@
 package com.h2;
 
+import java.text.DecimalFormat;
+
 public class MortgageCalculator {
 
     private long loanAmount;
@@ -32,7 +34,9 @@ public class MortgageCalculator {
     }
 
     public String toString(){
-        return "Hello";
+        DecimalFormat df;
+        df = new DecimalFormat("####0.00");
+        return "monthlyPayment: " + df.format(monthlyPayment);
     }
 
 }
