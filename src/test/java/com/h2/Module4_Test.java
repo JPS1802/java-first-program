@@ -362,7 +362,7 @@ public class Module4_Test {
             assertEquals(1, filteredMethod.size(), classToFind + " should contain a method called '" + methodName + "'");
             Method method = filteredMethod.get(0);
             final String result = (String) invokeMethod(method, instance);
-            final String expected = "monthlyPayment: 1221,14";
+            final String expected = "monthlyPayment: 1221.14";
             assertEquals(expected, result, methodName + " should return " + expected);
         }
     }
