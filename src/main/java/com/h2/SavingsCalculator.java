@@ -10,23 +10,29 @@ public class SavingsCalculator {
         this.credits = credits;
         this.debits = debits;
     }
-    private float sumOfCredits(float[] credits) {
+    private float sumOfCredits() {
         float sum = 0.0f;
-        for (float credit : credits) {
+        for (float credit : this.credits) {
             sum += credit;
         }
         return sum;
     }
-    private float sumOfDebits(float[] debits) {
+    private float sumOfDebits() {
         float sum = 0.0f;
+        for (float debit : this.debits) {
+            sum += debit;
+        }
 
         return sum;
     }
     private static int remainingDaysInMonth(LocalDate date){
-        YearMonth yearMonth = YearMonth.of(date.getYear();date.getMonth());
+        YearMonth yearMonth = YearMonth.of(date.getYear(),date.getMonth());
         int totalDaysInMonth = yearMonth.lengthOfMonth();
         int remainingDays;
         remainingDays = totalDaysInMonth - date.getDayOfMonth();
         return remainingDays;
+    }
+    public float calculate(){
+        return 0;
     }
 }
