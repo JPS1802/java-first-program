@@ -28,17 +28,20 @@ public class Finance {
     private static void executeCommand(String command, String[] arguments){
         switch (command) {
             case BEST_LOAN_RATES:
-                System.out.println("Finding best loan rates ...");
+                System.out.print("Finding best loan rates ..." + "\n");
                 BestLoanRates.main(arguments);
                 return;
             case SAVINGS_CALCULATOR:
-                System.out.println("Finding your net savings ...");
+                System.out.print("Finding your net savings ..." + "\n");
                 SavingsCalculator.main(arguments);
                 return;
             case MORTGAGE_CALCULATOR:
-                System.out.println("Finding your monthly payment ...");
+                System.out.print("Finding your monthly payment ..." + "\n");
                 MortgageCalculator.main(arguments);
                 return;
         }
+    }
+    public static void main(String[] args){
+
     }
 }
