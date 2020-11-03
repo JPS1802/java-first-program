@@ -18,8 +18,10 @@ public class Finance {
             case SAVINGS_CALCULATOR: return args.length == 3;
             case MORTGAGE_CALCULATOR: return args.length == 4;
         }
-
-
         return false;
+    }
+
+    private static void executeCommand(String command, String[] arguments){
+        
     }
 }
