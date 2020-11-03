@@ -2,6 +2,7 @@ import com.h2.BestLoanRates;
 import com.h2.MortgageCalculator;
 import com.h2.SavingsCalculator;
 
+import java.util.Arrays;
 import java.util.Map;
 
 public class Finance {
@@ -38,10 +39,19 @@ public class Finance {
             case MORTGAGE_CALCULATOR:
                 System.out.print("Finding your monthly payment ..." + "\n");
                 MortgageCalculator.main(arguments);
-                return;
         }
     }
     public static void main(String[] args){
-
+        String command = args[0];
+        if (!commandsToUsage.containsKey(command)){
+            System.out.print(command + ": command not found" +"\n");
+            return;
+        }
+        boolean isValidCommand = validateCommandArguments(args);
+        if (!isValidCommand) {
+            commandsToUsage.get(args[0]);
+            return;
+        }
+        executeCommand(command, Arrays.copyOfRange(args,1,args.length));
     }
 }
